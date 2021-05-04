@@ -1,0 +1,141 @@
+.container-fluid{
+    margin: 0%;
+    padding: 0%;
+}
+.galeriaPrincipal{
+    background-color:  rgb(235, 226, 226);
+    margin: 0;
+    &__controles{
+        color: rgb(235, 226, 226);
+    }
+    &__imagen{
+        height: 60%;
+        width: 60%;
+        margin: auto;
+        vertical-align: middle;
+    }
+    &__boton{
+        color: rgb(235, 226, 226);
+    }
+}
+.final{
+        display: grid;
+        grid-template-columns: 5% 30% 30% 30% 5%;
+        grid-template-areas:
+                            ". nombre subir mensaje .";
+        background-color: black;
+        color: blanchedalmond;
+        font-style: normal;
+        font-weight: 100;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 20px;
+        margin: 0px;
+        padding: 0px;
+        height: 50px;
+        width: 100%;
+    &__nombre{
+        text-align: left;
+        grid-area: nombre;
+        margin-top: 10px;
+    }
+    &__subir{
+        text-align: center;
+        grid-area: subir;
+        margin-top: 10px;
+    }
+    &__mensaje{
+        text-align: right;
+        grid-area: mensaje;
+        margin-top: 10px;
+    }
+}
+.galeriaPortfolio{
+    margin: 5px;
+    &__imagen{
+        height: 100vh;
+        width: 100%;
+        margin: 5px;
+    }
+}
+.comentario{
+    background-color: rgb(235, 226, 226);;
+    &__titulo{
+        text-align: left;
+    }
+    &__caja{
+        margin-left: 40%;
+    }
+}
+.biografia{
+    margin: 0%;
+    padding: 0%;
+    &__titulo{
+    margin-top: 10%;
+    background-color: rgb(236, 232, 232);
+    color: black;
+    font-style: normal;
+    font-weight: 100;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    text-align: center;      
+    }
+    &__texto{
+    margin-top: 10%;
+    background-color: rgb(236, 232, 232);
+    color: black;
+    font-style: normal;
+    font-weight: 30;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    }
+}
+.estiloTitulo{
+    color: rgb(20, 20, 20);
+    font-style:normal;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 80px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(235, 226, 226);
+}
+.estiloTituloDos{
+    @extend .estiloTitulo;
+    font-size: 70px;
+    color: rgb(46, 45, 45);
+}
+.estiloSubtitulo{
+    color: rgb(20, 20, 20);
+    font-style: normal;
+    font-weight: 50;
+    font-family: 'Poiret One', cursive;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgb(235, 226, 226)
+}
+@mixin carta ($colorFondo , $colorTitulo ,) {
+    color: $colorTitulo;
+    background-color: $colorFondo; 
+}
+h5{
+    @include carta(none, rgb(41, 34, 46) )
+}
+.card{
+    background-color: rgb(34, 44, 48);
+    margin: 5px;
+    &__titulo{
+        color: blanchedalmond;
+    }
+    &__texto{
+        color: blanchedalmond;
+    }
+    &__boton{
+        background-color: rgb(117, 117, 173);
+    }
+}

@@ -1,0 +1,218 @@
+.grilla{
+    display: grid;
+    grid-template-rows: 6% 2% 89% 3%;
+    grid-template-columns: 100%;
+    grid-template-areas:
+                        "header"
+                        "menu"
+                        "contenido"
+                        "footer";
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+}
+.header{
+    grid-area: header;
+    background:  rgb(235, 226, 226);
+}
+.menu{
+    grid-area: menu;
+    background:  rgb(235, 226, 226);
+    margin: 0%;
+    padding: 0%;
+}
+.galeriaPrincipal{
+    grid-area: contenido;
+}
+.final{
+    grid-area: footer;
+}
+.menu{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    text-align: center;
+    align-items: center;
+    list-style: none; 
+    background: rgb(235, 226, 226);
+    color: rgb(29, 29, 29);
+    font-family: 'Quicksand', sans-serif;
+    border-top: 1px rgb(37, 37, 37)  solid;
+    border-bottom: 1px rgb(37, 37, 37) solid;
+    margin: 0%;
+    padding: 0%;
+}
+ul ul{
+    position: absolute;
+    display: none;
+}
+ul li :hover ul{
+    display: inline-block;
+    width: 100%;
+}
+ul ul li{
+    display: block;
+    width: 100%;
+}
+.final__subir:hover{
+    background-color: rgb(116, 110, 111);
+    color: black;
+}
+.final__mensaje:hover{
+    background-color: rgb(116, 110, 111);
+    color: black;
+}
+.pequeñaGaleria{
+    background-color: rgb(235, 226, 226);
+    margin: 0%;
+    padding: 0%;
+    display: grid;
+    grid-template-columns: 5% 30% 30% 30% 5%;
+    grid-template-areas:
+                        ". cartaUno cartaDos cartaTres .";
+}
+.cartaUno{
+    grid-area: cartaUno;
+}
+.cartaDos{
+    grid-area: cartaDos;
+}
+.cartaTres{
+    grid-area: cartaTres;
+}
+.grillaTres{
+    background-color: rgb(235, 226, 226);
+    display: grid;
+    grid-template-columns: 5% 45% 45% 5%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+                        ". titulo retrato ."
+                        ". texto retrato ." ;
+}
+.titulo{
+    grid-area: titulo;
+}
+.retrato{
+    grid-area: retrato;
+    height: 100%;
+    width: 100%;
+    overflow:hidden;
+    padding: 10%;
+}
+.texto{
+    grid-area: texto;
+}
+input:hover{
+    background-color: cadetblue;
+    font-family: 'Quicksand', sans-serif;
+}
+.grillaCinco{
+    background-color: rgb(235, 226, 226);
+    display: grid;
+    grid-template-columns: 5% 30% 30% 30% 5%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: ". servicioUno servicioDos servicioCinco ."
+                         ". servicioTres servicioCuatro servicioCinco .";
+}
+.servicioUno{
+    grid-area: servicioUno;
+}
+.servicioDos{
+    grid-area: servicioDos;
+}
+.servicioTres{
+    grid-area: servicioTres;
+}
+.servicioCuatro{
+    grid-area: servicioCuatro;
+}
+.servicioCinco{
+    margin-top: 15%;
+    grid-area: servicioCinco;
+}
+.galeriaPortfolio{
+    margin: 0%;
+    padding: 0%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+                        "uno dos"
+                        "tres cuatro";
+    background-color:  rgb(235, 226, 226);
+}
+.imagenUno{
+    grid-area: uno;
+    justify-self: center;
+}
+.imagenDos{
+    grid-area: dos;
+    justify-self: center;
+}
+.imagenTres{
+    grid-area: tres;
+    justify-self: center;
+}
+.imagenCuatro{
+    grid-area: cuatro;
+    justify-self: center;
+}
+@media all and (max-width:768px){
+    .pequeñaGaleria{
+        display: block;
+        justify-self: center;
+    }
+    .estiloTitulo{
+        font-size: 70px;
+    }
+    .estiloSubtitulo{
+        font-size: 30px;
+    }
+    .final{
+        height: 60px;
+    }
+    .galeriaPortfolio{
+        display: block;
+        justify-items: center;
+        overflow: hidden;
+    }
+    .grillaCinco{
+        display: block;
+        padding-left: 30%;
+    }
+    .comentario__caja{
+        margin-left: 30%;
+        padding-left: 0%;
+    }
+}
+@media all and (max-width:480px){
+    .pequeñaGaleria{
+        display: block;
+        align-items: center;
+    }
+    .estiloTitulo{
+        font-size: 50px;
+    }
+    .estiloTituloDos{
+        font-size: 50px;
+    }
+    .estiloSubtitulo{
+        font-size: 30px;
+    }
+    .final{
+        height: 80px;
+        font-size: 10px;
+        margin: 0;
+    }
+    .galeriaPortfolio{
+        display: block;
+        justify-items: center;   
+    }
+    .grillaCinco{
+        display: block;
+        padding-left: 10%;
+    }
+    .comentario__caja{
+        margin-left: 20%;
+        padding-left: 0%;
+    }
+}

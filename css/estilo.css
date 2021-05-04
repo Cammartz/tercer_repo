@@ -1,0 +1,121 @@
+.container-fluid {
+  margin: 0%;
+  padding: 0%; }
+
+.galeriaPrincipal {
+  background-color: #ebe2e2;
+  margin: 0; }
+  .galeriaPrincipal__controles {
+    color: #ebe2e2; }
+  .galeriaPrincipal__imagen {
+    height: 60%;
+    width: 60%;
+    margin: auto;
+    vertical-align: middle; }
+  .galeriaPrincipal__boton {
+    color: #ebe2e2; }
+
+.final {
+  display: grid;
+  grid-template-columns: 5% 30% 30% 30% 5%;
+  grid-template-areas: ". nombre subir mensaje .";
+  background-color: black;
+  color: blanchedalmond;
+  font-style: normal;
+  font-weight: 100;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+  height: 50px;
+  width: 100%; }
+  .final__nombre {
+    text-align: left;
+    grid-area: nombre;
+    margin-top: 10px; }
+  .final__subir {
+    text-align: center;
+    grid-area: subir;
+    margin-top: 10px; }
+  .final__mensaje {
+    text-align: right;
+    grid-area: mensaje;
+    margin-top: 10px; }
+
+.galeriaPortfolio {
+  margin: 5px; }
+  .galeriaPortfolio__imagen {
+    height: 100vh;
+    width: 100%;
+    margin: 5px; }
+
+.comentario {
+  background-color: #ebe2e2; }
+  .comentario__titulo {
+    text-align: left; }
+  .comentario__caja {
+    margin-left: 40%; }
+
+.biografia {
+  margin: 0%;
+  padding: 0%; }
+  .biografia__titulo {
+    margin-top: 10%;
+    background-color: #ece8e8;
+    color: black;
+    font-style: normal;
+    font-weight: 100;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    text-align: center; }
+  .biografia__texto {
+    margin-top: 10%;
+    background-color: #ece8e8;
+    color: black;
+    font-style: normal;
+    font-weight: 30;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+
+.estiloTitulo, .estiloTituloDos {
+  color: #141414;
+  font-style: normal;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 80px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+  background-color: #ebe2e2; }
+
+.estiloTituloDos {
+  font-size: 70px;
+  color: #2e2d2d; }
+
+.estiloSubtitulo {
+  color: #141414;
+  font-style: normal;
+  font-weight: 50;
+  font-family: 'Poiret One', cursive;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #ebe2e2; }
+
+h5 {
+  color: #29222e;
+  background-color: none; }
+
+.card {
+  background-color: #222c30;
+  margin: 5px; }
+  .card__titulo {
+    color: blanchedalmond; }
+  .card__texto {
+    color: blanchedalmond; }
+  .card__boton {
+    background-color: #7575ad; }
